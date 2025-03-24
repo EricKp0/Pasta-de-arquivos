@@ -1,0 +1,127 @@
+/* styles.css */
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #D3D3D3;
+}
+
+#wrapper {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    margin: 1% 0;
+    padding: 0.25rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+.content {
+    overflow: auto;
+}
+
+.feature, #nav, #footer {
+    margin: 1% 0;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+}
+
+.column2 {
+    margin: 0 3%;
+}
+
+.column1 > p, .column2 > p, .column3 > p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.column1 p, .column2 p, .column3 p {
+    padding: 10px;
+}
+
+#nav, #footer {
+    background: #efefef;
+    padding: 0.5rem 0;
+}
+
+.feature {
+    background: #efefef;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.article {
+    background: #efefef;
+    height: 25rem;
+    margin-bottom: 1rem;
+}
+
+/* form.css */
+form {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gender-group {
+    margin-bottom: 10px;
+}
+
+.gender-group label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
