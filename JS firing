@@ -1,0 +1,67 @@
+// ==== DOMContentLoaded ====
+// Executa o código assim que o HTML for carregado (antes de imagens, etc)
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Página carregada!");
+});
+
+// ==== document ====
+// Objeto que representa toda a estrutura da página
+console.log(document.title); // Mostra o título da página
+
+// ==== getElementById ====
+// Seleciona um elemento pelo ID
+const titulo = document.getElementById("meuTitulo");
+titulo.textContent = "Novo Título"; // Altera o texto
+
+// ==== querySelector ====
+// Seleciona o primeiro elemento que combina com um seletor CSS
+const botao = document.querySelector(".botao-clique");
+const paragrafo = document.querySelector("p"); // Primeiro <p>
+
+// ==== Evento: click ====
+// Responde ao clique do usuário
+botao.addEventListener("click", function () {
+  alert("Você clicou no botão!");
+});
+
+// ==== Evento: keypress ====
+// Detecta quando uma tecla é pressionada
+document.addEventListener("keypress", function (event) {
+  console.log("Tecla pressionada: " + event.key);
+});
+
+// ==== textContent ====
+// Define ou pega o texto puro de um elemento (sem interpretar HTML)
+paragrafo.textContent = "Novo parágrafo";
+
+// ==== innerHTML ====
+// Define ou pega o conteúdo com interpretação de tags HTML
+paragrafo.innerHTML = "<strong>Texto em negrito</strong>";
+
+// ==== appendChild ====
+// Cria e adiciona um novo elemento na página
+const novoElemento = document.createElement("p");
+novoElemento.textContent = "Este é um novo parágrafo!";
+document.body.appendChild(novoElemento);
+
+// ==== classList ====
+// Manipula classes CSS de um elemento
+const caixa = document.getElementById("caixa");
+caixa.classList.add("destaque");    // Adiciona classe
+caixa.classList.remove("destaque"); // Remove classe
+caixa.classList.toggle("ativo");    // Alterna: se tem, remove; se não tem, adiciona
+
+// ==== parseInt ====
+// Converte string para número inteiro
+const valor1 = "42.7";
+const inteiro = parseInt(valor1); // Resultado: 42
+
+// ==== parseFloat ====
+// Converte string para número com casas decimais
+const decimal = parseFloat(valor1); // Resultado: 42.7
+
+// ==== isNaN ====
+// Verifica se o valor NÃO é um número
+console.log(isNaN("abc"));        // true (não é número)
+console.log(isNaN("123"));        // false (é interpretado como número)
+console.log(isNaN(parseFloat("a"))); // true
